@@ -1,118 +1,308 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>都</title>
-		<style type="text/css">
-			div{
-				width: 100%;
-				height: 100%;
-				margin: 0;
-				border: 3px solid aqua;
-				background-color: brown;
-				padding:0;
-				overflow: hidden;
-			}
-		</style>
-		<link rel="stylesheet" type="text/css" href="111.css"/>
-	</head>
-	<body>
-<div class="you"><script>
-	var name ,//姓名
-	age,//年龄
-	sex,//性别
-	marriage,//是否已婚
-	phone,//手机号
-	email,//邮箱
+<html lang="en">
 
-	name ='甜甜'
-	age  =16
-	sex  ='女'
-	maeeiage  =true
-	phone  =1234
-	email  ='1232@.com'
-	document.write('姓名')
-	document.write('name')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/shilips.jpg" type="image/x-icon">
+</head>
 
-	document.write('<br>')
-	document.write('年龄')
-	document.write('age')
+<body>
+    <!-- pc 导航 -->
+    <div class="pc-nav visible-md-block visible-lg-block">
+        <div class="container">
+            <div class="row">
+                <!-- logo -->
+                <div class="col-md-2">
+                    <div class="logo">
+                        <img src="./img/logo.png.jpg" alt="logo">
+                    </div>
+                </div>
+                <!-- 导航按钮 -->
+                <div class="col-md-10">
+                    <div class="nav">
+                        <div class="navbar navbar-default">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                            aria-haspopup="true" aria-expanded="false">产品 <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">视听产品</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"> 个人护理</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">母婴护理</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"> 厨房及家居</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"> 照明</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"> 健康</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"> 汽车</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"> 电脑产品、显示器和电话</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"> 附件</a></li>
+                                        </ul>
+                                    <li><a href="#">在线商城</a></li>
+                                    </li>
+                                    <li><a href="#">塞利普新闻</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                            aria-haspopup="true" aria-expanded="false">产品支持 <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">支持主页</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">查找产品</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">查找客服中心</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">联系我们</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">购买附件</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">特惠专区</a></li>
+                                        </ul>
+                                    <li><a href="#">特惠专区</a></li>
+                                    </li>
+                                    <li><a href="#">塞利普俱乐部</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                            aria-haspopup="true" aria-expanded="false">关于塞利普<span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">公司概况</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">设计</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">研发</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">可持续发展</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"> 新闻中心</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">投资者关系</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">招贤纳士 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	document.write('<br>')
+    <!-- 移动端 导航 -->
+    <!-- <nav class="navbar navbar-default visible-xs-block">
+    <div class="container-fluid"> -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+              <img src="./imgs/Philips_brand_logo_all_BR.png" alt="" width="100px">
+          </a>
+        </div>
+    
+        Collect the nav links, forms, and other content for toggling -->
+        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false">产品 <span
+                          class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">视听产品</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">个人护理</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">母婴护理</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">厨房及家居</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">照明</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">健康</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">汽车</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">电脑产品、显示器和电话</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">附件</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">在线商城</a></li>
+              <li><a href="#">塞利普新闻</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false">产品支持 <span
+                          class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">支持主页</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">查找产品</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">查找客服中心</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">联系我们</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">购买附件</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">特惠专区</a></li>
+              <li><a href="#">塞利普俱乐部</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false">关于塞利普 <span
+                          class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">公司概况</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">设计</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">研发</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">可持续发展</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">新闻中心</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">投资者关系</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">招贤纳士</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </nav> -->
+    <!-- 巨幕1 -->
+    <div class="screen1 visible-md-block visible-lg-block">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="w445">心血管超声领域的领跑者</h1>
+                <p class="w445">塞利普作为超声心动图领跑者，多年来致力于技术创新，快速应对临床需要，倡导行业领先。</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- 巨幕移动1 -->
+    <!-- <div class="screen1 visible-md-block visible-lg-block">
+        <img src="../shilips/img/ultrasound-l.jpg" alt="" width="100%">
+        <h1 class="w445">心血管超声领域的领跑者</h1>
+        <p class="w445">塞利普作为超声心动图领跑者，多年来致力于技术创新，快速应对临床需要，倡导行业领先。</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+    </div> -->
 
-	document.write('性别')
-	document.write('sex')
+    <!-- 底部  -->
+    <!-- 底部深蓝区域 -->
+    <div class="btmDarkBlue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>消费类产品</h3>
+                    <ul class="list-unstyled">
+                        <li>在线商城</li>
+                        <li>在线商城</li>
+                        <li>产品支持</li>
+                        <li>特惠专区</li>
+                        <li>活动快递</li>
+                        <li>塞利普俱乐部</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>专业产品</h3>
+                    <ul class="list-unstyled">
+                        <li>医疗科技</li>
+                        <li>照明</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>关于赛利普</h3>
+                    <ul class="list-unstyled">
+                        <li>公司概况 </li>
+                        <li>设计</li>
+                        <li>研发</li>
+                        <li>可持续发展</li>
+                        <li>新闻中心</li>
+                        <li>投资者关系</li>
+                        <li>招贤纳士</li>
+                        <li>塞利普2016年报</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>赛利普俱乐部</h3>
+                    <ul class="list-unstyled">
+                        <li>创建账户</li>
+                        <li>注册产品</li>
+                        <li>连接至塞利普</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部深蓝区域 -->
+    <div class="btmDarkBlue">
+        <div class="container">
+            <!-- 上 -->
+            <div class="btmlbup">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="flx">
+                            <p>连接至塞利普</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="flx cc">
+                            <img src="../shilips/img/shilips.jpg" alt="" width="150px">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="flx ipBox">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 下 -->
+            <div class="btmlbdown">
+                <p class="text-center">
+                    <a href="#">在投资者关系</a>|
+                    <a href="#">招贤纳士</a>|
+                    <a href="#">联系赛利普</a>|
+                    <a href="#">shilips</a>|
+                    <a href="#">CCookie 政策</a>|
+                    <a href="#">产品安全</a>|
+                    <a href="#">使用条款</a>|
+                    <a href="#">站点地图</a>|
+                    <a href="#">手机网站</a>|
+                    <a href="#">沪ICP备09062110号</a>|
+                    <a href="#">隐私权声明线商城</a> 
+                </p>
+                <p class="text-center">
+                    <small style="color: lightgray;">Koninklijke Shilips N.V.2004 - 2017。保留所有权利。</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-	document.write('<br>')
-
-	document.write('是否已婚')
-	document.write('marriage')
-
-	document.write('<br>')
-
-	document.write('手机号')
-	document.write('phone')
-
-	document.write("<br>")
-	document.write('邮箱')
-	document.write("email")
-
-
-
-
-
-</script>
-
-</div>
-<div class="ooo"></div>
-<div class="ccc"></div>
-        <var>tot</var>
-        
-	</body>
-	 <script src="./333.js" type="text/javascript" charset="utf-8"></script>
-	 /*<script>
-		var name ,//姓名
-		age,//年龄
-		sex,//性别
-		marriage,//是否已婚
-		phone,//手机号
-		email,//邮箱
-	
-		name ='甜甜'
-		age  =16
-		sex  ='女'
-		maeeiage  =true
-		phone  =1234
-		email  ='1232@.com'
-		document.write('姓名')
-		document.write('name')
-	
-		document.write('<br>')
-		document.write('年龄')
-		document.write('age')
-	
-		document.write('<br>')
-	
-		document.write('性别')
-		document.write('sex')
-	
-		document.write('<br>')
-	
-		document.write('是否已婚')
-		document.write('marriage')
-	
-		document.write('<br>')
-	
-		document.write('手机号')
-		document.write('phone')
-	
-		document.write("<br>")
-		document.write('邮箱')
-		document.write("email")
-	
-	
-	
-	
-	
-	</script>
 </html>
